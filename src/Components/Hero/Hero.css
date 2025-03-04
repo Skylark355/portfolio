@@ -1,0 +1,155 @@
+.hero {
+  /* padding-top: 10rem; */
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #010e13ee, #02506fdf),
+    url("../../assets/images/hero1.png");
+  background-size: 130px; /* Adjust the size of repeated images */
+  background-repeat: repeat; /* Repeats the image */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+}
+
+.hero span {
+  color: #b9ebff;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.wave span {
+  font-size: 5rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  color: white;
+  width: 60%;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 3rem;
+}
+
+.hero-cta button {
+  padding: 0.4rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 0.7rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.hero-cta .myProjects {
+  background: linear-gradient(to bottom, #5ab6dbad, #124e66, #5ab6dbad)
+    transparent;
+}
+
+.hero-cta .myProjects {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-cta .myProjects span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.plane {
+  display: inline-block;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.myProjects:hover .plane {
+  transform: rotate(0deg);
+}
+
+.hero-cta .myExperience {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-cta .myExperience span {
+  color: white;
+  font-size: 2rem;
+}
+
+.arrow {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.text {
+  transition: transform 0.3s ease-in-out;
+}
+
+.myExperience:hover .arrow {
+  opacity: 0; /* Hide arrow in initial place */
+  transform: translateX(-100px); /* Move it out of view */
+}
+
+.myExperience:hover .text::before {
+  content: "→ "; /* Add the arrow at the beginning */
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.myExperience:hover .text {
+  transform: translateX(20px); /* Move text to the right */
+}
+
+.hero-cta .myExperience:hover {
+  background-color: #0a232b;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
