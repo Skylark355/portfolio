@@ -14,7 +14,7 @@ const NavBar = () => {
 
       <ul className="nav-menu">
         <a
-          href="#home"
+          href="#"
           className={menu === "home" ? "active" : ""}
           onClick={() => setMenu("home")}
         >
