@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Experience.css";
 import { experiences } from "../../Constants";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      offset: 100,
+      delay: 200,
+    });
+  });
+
   return (
-    <div className="experience" id="experience">
+    <div
+      className="experience"
+      id="experience"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div className="experience-top">
         <div className="empty"></div>
         <h1 className="title">Experience</h1>
@@ -18,7 +33,12 @@ const Experience = () => {
         <div className="experiences">
           {experiences.map((exp, id) => {
             return (
-              <div key={id} className="experiences-item">
+              <div
+                key={id}
+                className="experiences-item"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="dot"></div>
                 <div className="contents">
                   <h1>{exp.title}</h1>

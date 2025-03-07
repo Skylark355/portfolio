@@ -1,0 +1,74 @@
+.skills {
+  background-attachment: fixed;
+  background-image: linear-gradient(to top, #023347ee, #083748ee),
+    url("../../assets/images/hero1.png");
+  background-size: 130px; /* Adjust the size of repeated images */
+  background-repeat: repeat; /* Repeats the image */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+  margin-bottom: 5rem;
+}
+
+.skills-top {
+  text-align: center;
+  color: white;
+}
+
+.skills-top h1 {
+  font-size: 2.5rem;
+}
+
+.skills-top h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 5;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 4rem;
+  /* margin-left: 4rem; */
+}
+
+.skill-style {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.7rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  animation: popUp 0.8s ease-out forwards;
+}
+
+.skill-style h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.skill-style:hover {
+  background-color: #05252fce;
+  color: white;
+}
+
+.skill img {
+  height: 2rem;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

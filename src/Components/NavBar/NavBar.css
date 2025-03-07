@@ -61,6 +61,14 @@
     75% { transform: translateY(-2px); }
     100% { transform: translateY(0); }
   }
+
+  /* media queries  */
+
+  @media (min-width: 320px) and (max-width: 480px) {
+  
+    /* CSS */
+    
+  }
   
 
 /* background: linear-gradient(90deg, #b9ebff 20%, #92c5d9 30%, #46b6e2 50%, #1d779a 80%); */

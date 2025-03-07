@@ -4,13 +4,13 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero" id="#hero">
-      <h1>
+      <h1 className="title">
         Hello{" "}
         <span style={{ fontSize: "3.5rem" }} className="wave">
           👋
         </span>
       </h1>
-      <h1>
+      <h1 className="name">
         I'm <span>Skylark Chris,</span> a Frontend Developer.
       </h1>
       <p>
