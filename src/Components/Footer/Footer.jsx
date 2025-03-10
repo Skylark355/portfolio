@@ -37,11 +37,11 @@ const Footer = () => {
       </div>
 
       <div className="footer-item3">
-        <a href="adzesi.chris@gmail.com" target="_blank">
-          <a href="https://www.instagram.com/skylark_chris">
+        {/* <a href="adzesi.chris@gmail.com" > */}
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank">
             <img src={mail} alt="" />{" "}
           </a>
-        </a>
+        {/* </a> */}
         <span>Mail me</span>
       </div>
     </div>
