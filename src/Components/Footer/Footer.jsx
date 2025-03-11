@@ -8,9 +8,10 @@ import mail from "../../assets/images/mail.png";
 const Footer = () => {
   return (
     <div className="footer" id="contact">
+      <div className="footer-all">
       <div className="footer-item1">
         <p>Contact</p>
-        <span>Designed & Built by Skylark Chris © 2025</span>
+        {/* <span>Designed & Built by Skylark Chris © 2025</span> */}
       </div>
 
       <div className="footer-item2">
@@ -37,13 +38,15 @@ const Footer = () => {
       </div>
 
       <div className="footer-item3">
-        {/* <a href="adzesi.chris@gmail.com" > */}
-          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank">
-            <img src={mail} alt="" />{" "}
-          </a>
-        {/* </a> */}
-        <span>Mail me</span>
+        <a href="mailto:adzesi.chris@gmail.com">
+          <img src={mail} alt="" />{" "}
+        </a>
+        <a href="mailto:adzesi.chris@gmail.com">
+          <span>Mail me</span>
+        </a>
       </div>
+      </div>
+      <span className="copy">Designed & Built by Skylark Chris © 2025</span>
     </div>
   );
 };

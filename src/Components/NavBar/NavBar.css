@@ -61,13 +61,20 @@
     75% { transform: translateY(-2px); }
     100% { transform: translateY(0); }
   }
+  
 
   /* media queries  */
 
   @media (min-width: 320px) and (max-width: 480px) {
   
-    /* CSS */
-    
+
+    .navbar{
+        /* display: none; */
+    }
+
+    .navbar .nav-menu{
+        display: none;
+    }
   }
   
 
