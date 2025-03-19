@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer" id="contact">
       <div className="footer-all">
       <div className="footer-item1">
-        <p>Contact</p>
+      <a href="#"><h1>Skylark Chris</h1></a>
         {/* <span>Designed & Built by Skylark Chris © 2025</span> */}
       </div>
 

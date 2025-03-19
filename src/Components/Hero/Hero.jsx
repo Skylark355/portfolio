@@ -18,13 +18,13 @@ const Hero = () => {
         seamless design with functionality.
       </p>
       <div className="hero-cta">
-        <button className="myProjects">
+        <a href="#projects"><button className="myProjects">
           <span className="plane">✈</span>
           <span className="text">My Projects</span>
-        </button>
-        <button className="myExperience">
+        </button></a>
+        <a href="#experience"><button className="myExperience">
           Experience <span className="arrow">→</span>
-        </button>
+        </button></a>
       </div>
     </div>
   );
