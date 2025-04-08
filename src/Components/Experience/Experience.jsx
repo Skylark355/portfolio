@@ -23,11 +23,26 @@ const Experience = () => {
       <div className="experience-top">
         <div className="empty"></div>
         <h1 className="title">Experience</h1>
-        <button className="resume">
-          <span className="download-arrow">⬇</span>{" "}
-          <span className="download-text">Download Resume</span>
-        </button>
+       
+       
+        <button
+  className="resume"
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "../../assets/images/CHRISTOPHER_ADZESI_RESUME.pdf"; // Make sure the PDF is in the "public" folder
+    link.download = "Christopher_Adzesi_Resume.pdf"; // Set the downloaded file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  <span className="download-arrow">⬇</span>{" "}
+  <span className="download-text">Download Resume</span>
+</button>
+
       </div>
+
+      
 
       <div className="experience-bottom">
         <div className="experiences">

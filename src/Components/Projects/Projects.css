@@ -65,11 +65,13 @@
 .stack {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .stack img {
   height: 2rem;
-  width: 2rem;
+  width: 2.2rem;
+  margin-top: 0.2rem;
 }
 
 .stack1 {

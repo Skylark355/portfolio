@@ -39,28 +39,23 @@ const Projects = () => {
                   <h1>{pro.title}</h1>
                   <div className="project-right-images">
                     <a href={pro.liveLink} target="_blank">
-                      <img src={pro.live} alt="" />
+                      <img src={pro.live} alt="Live Link" />
                     </a>
                     <a href={pro.githubLink} target="_blank">
-                      <img src={pro.github} alt="" />
+                      <img src={pro.github} alt="GitHub Link" />
                     </a>
                   </div>
+
                   <p>{pro.description}</p>
+
+                  {/* Dynamically render stacks */}
                   <div className="stack">
-                    <div className="stack1">
-                      <img src={pro.stackImage1} alt="" />
-                      <span>{pro.stack1}</span>
-                    </div>
-
-                    <div className="stack1">
-                      <img src={pro.stackImage2} alt="" />
-                      <span>{pro.stack2}</span>
-                    </div>
-
-                    <div className="stack1">
-                      <img src={pro.stackimage3} alt="" />
-                      <span>{pro.stack3}</span>
-                    </div>
+                    {pro.stacks?.map((stack, index) => (
+                      <div className="stack1" key={index}>
+                        <img src={stack.image} alt={stack.name} />
+                        <span>{stack.name}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
