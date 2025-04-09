@@ -4,10 +4,11 @@ import react from "./assets/images/react.png";
 import html from "./assets/images/html.webp";
 import airplane from "./assets/images/airplane.png";
 import github from "./assets/images/github.png";
-import Productly from "./assets/images/Productly.webp";
 import global from "./assets/images/global.webp";
 import food from "./assets/images/food.webp";
 import coffee from "./assets/images/coffee.jpg";
+import Safespace from "./assets/images/Safespace.webp"
+import todo from "./assets/images/todo.webp"
 
 export const experiences = [
   {
@@ -63,22 +64,7 @@ export const projects = [
     ],
   },
 
-  {
-    image: Productly,
-    title: "Productly",
-    live: airplane,
-    liveLink: "https://skylark355.github.io/Productly/",
-    github: github,
-    githubLink: "https://github.com/Skylark355/Productly",
-    description:
-      "Productly is a project focused on Design Thinking Superpowers, highlighting how design thinking enhances creativity, problem-solving, and innovation. It explores key principles like empathy, ideation, prototyping, and user-centered design. Through this project, I gained a deeper understanding of design thinking methodologies and how they can be applied to develop impactful solutions.",
-    stacks: [
-      { name: "HTML", image: html },
-      { name: "CSS", image: css3 },
-      { name: "JS", image: js },
-    ],
-  },
-
+  
   {
     image: coffee,
     title: "Coffe App",
@@ -96,6 +82,19 @@ export const projects = [
   },
 
   {
+    image: Safespace,
+    title: "Safe Space",
+    live: airplane,
+    liveLink: "https://safe-space-sigma.vercel.app/",
+    github: github,
+    githubLink: "https://github.com/Skylark355/SafeSpace/",
+    description:
+      "SafeSpace is a secure digital platform that empowers individuals to report gender-based violence, access helpful resources, and find support—all in a safe, confidential, and supportive environment.",
+    stacks: [{ name: "React", image: react }],
+  },
+  
+
+  {
     image: food,
     title: "Food App",
     live: airplane,
@@ -104,6 +103,19 @@ export const projects = [
     githubLink: "https://github.com/Skylark355/food-app",
     description:
       "Food App is a project I built using React.js to help users discover various recipes and meal options. It features a clean and interactive interface, allowing users to explore different cuisines effortlessly. This project enhanced my skills in React.js, component-based development, and state management while improving the overall user experience.",
+    stacks: [{ name: "React", image: react }],
+  },
+
+
+  {
+    image: todo,
+    title: "Todo App",
+    live: airplane,
+    liveLink: "https://todo-app-chi-azure-27.vercel.app/",
+    github: github,
+    githubLink: "https://github.com/Skylark355/Todo-App",
+    description:
+      "A functional and user-friendly To-Do application built with React.js. It allows users to add, delete, and filter tasks based on their status (e.g., all, completed, pending).",
     stacks: [{ name: "React", image: react }],
   },
 ];
