@@ -9,6 +9,7 @@ import food from "./assets/images/food.webp";
 import coffee from "./assets/images/coffee.jpg";
 import Safespace from "./assets/images/Safespace.webp"
 import todo from "./assets/images/todo.webp"
+import nutriscan from "./assets/images/nutriscan.webp"
 
 export const experiences = [
   {
@@ -48,37 +49,16 @@ export const skills = [
 ];
 
 export const projects = [
-  {
-    image: global,
-    title: "Global Tour",
+{
+    image: nutriscan,
+    title: "NutriScan",
     live: airplane,
-    liveLink: "https://skylark355.github.io/Global-Tour/",
+    liveLink: "https://nutri-scan-nu.vercel.app/",
     github: github,
-    githubLink: "https://github.com/Skylark355/Global-Tour",
+    githubLink: "https://github.com/Skylark355/NutriScan",
     description:
-      "Global Tour is a mini web project I built while learning HTML, CSS, and JavaScript. It provides tourists with information on destinations, accommodation, food, and travel essentials. The project helped me practice front-end development and improve my web design skills.",
-    stacks: [
-      { name: "HTML", image: html },
-      { name: "CSS", image: css3 },
-      { name: "JS", image: js },
-    ],
-  },
-
-  
-  {
-    image: coffee,
-    title: "Coffe App",
-    live: airplane,
-    liveLink: "https://skylark355.github.io/Coffee-Shop/",
-    github: github,
-    githubLink: "https://github.com/Skylark355/Coffee-Shop",
-    description:
-      "Coffee App is a project I developed to showcase a user-friendly platform for exploring different coffee types, recipes, and brewing methods. Built with HTML, CSS, and JavaScript, it provides an interactive experience for coffee lovers, helping them discover new flavors and preparation techniques.",
-    stacks: [
-      { name: "HTML", image: html },
-      { name: "CSS", image: css3 },
-      { name: "JS", image: js },
-    ],
+      "NutriScan harnesses the power of artificial intelligence to identify malnutrition in children through advanced image analysis and comprehensive health parameters.",
+    stacks: [{ name: "React", image: react }],
   },
 
   {
@@ -118,4 +98,37 @@ export const projects = [
       "A functional and user-friendly To-Do application built with React.js. It allows users to add, delete, and filter tasks based on their status (e.g., all, completed, pending).",
     stacks: [{ name: "React", image: react }],
   },
+
+    {
+    image: coffee,
+    title: "Coffe App",
+    live: airplane,
+    liveLink: "https://skylark355.github.io/Coffee-Shop/",
+    github: github,
+    githubLink: "https://github.com/Skylark355/Coffee-Shop",
+    description:
+      "Coffee App is a project I developed to showcase a user-friendly platform for exploring different coffee types, recipes, and brewing methods. Built with HTML, CSS, and JavaScript, it provides an interactive experience for coffee lovers, helping them discover new flavors and preparation techniques.",
+    stacks: [
+      { name: "HTML", image: html },
+      { name: "CSS", image: css3 },
+      { name: "JS", image: js },
+    ],
+  },
+
+  {
+    image: global,
+    title: "Global Tour",
+    live: airplane,
+    liveLink: "https://skylark355.github.io/Global-Tour/",
+    github: github,
+    githubLink: "https://github.com/Skylark355/Global-Tour",
+    description:
+      "Global Tour is a mini web project I built while learning HTML, CSS, and JavaScript. It provides tourists with information on destinations, accommodation, food, and travel essentials. The project helped me practice front-end development and improve my web design skills.",
+    stacks: [
+      { name: "HTML", image: html },
+      { name: "CSS", image: css3 },
+      { name: "JS", image: js },
+    ],
+  },
+
 ];
