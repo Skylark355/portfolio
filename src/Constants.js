@@ -7,11 +7,20 @@ import github from "./assets/images/github.png";
 import global from "./assets/images/global.webp";
 import food from "./assets/images/food.webp";
 import coffee from "./assets/images/coffee.jpg";
-import Safespace from "./assets/images/Safespace.webp"
-import todo from "./assets/images/todo.webp"
-import nutriscan from "./assets/images/nutriscan.webp"
+import Safespace from "./assets/images/Safespace.webp";
+import todo from "./assets/images/todo.webp";
+import nutriscan from "./assets/images/nutriscan.webp";
+import digital from "./assets/images/Digital.webp";
+import croply from "./assets/images/Croply.webp";
 
 export const experiences = [
+  {
+    title: "Frontend Developer ",
+    date: "NOV 2025 - to Date",
+    description:
+      "I currently work as a Frontend Developer at Node Eight, where I focus on building intuitive and responsive web interfaces. I enjoy transforming design concepts into functional digital experiences while making sure every detail feels smooth and usable. My work spans component development, state management, API integration, and performance optimization. I collaborate closely with designers and backend engineers to bring features to life and continuously improve the final product experience.",
+  },
+
   {
     title: "Frontend Developer Intern",
     date: "MAY 2025 - OCT 2025",
@@ -49,7 +58,32 @@ export const skills = [
 ];
 
 export const projects = [
-{
+  {
+    image: digital,
+    title: "Digital Filling System",
+    live: airplane,
+    liveLink: "https://digital-filing.vercel.app/",
+    github: github,
+    githubLink:
+      "https://github.com/Skylark355/National-Museum-Digital-Filing-System",
+
+    description:
+      "A digital filing system is a software-based tool used to store and manage files electronically. It keeps track of file names, categories, dates, and other important details, making it easy to organize, search, and retrieve documents when needed.",
+    stacks: [{ name: "React", image: react }],
+  },
+
+  {
+    image: croply,
+    title: "Croply",
+    live: airplane,
+    liveLink: "https://croply-git-main-skylark-chris-projects.vercel.app/",
+    github: github,
+    githubLink: "https://github.com/Skylark355/Croply",
+    description:
+      "Is digital platform is designed to empower farmers in Ho and beyond with the tools, information, and resources they need to thrive in today's agricultural marketplace. Whether you're a farmer looking to sell your produce or a buyer seeking quality crops, Croply is your one-stop solution for smarter farming and seamless trading.",
+    stacks: [{ name: "React", image: react }],
+  },
+  {
     image: nutriscan,
     title: "NutriScan",
     live: airplane,
@@ -72,7 +106,6 @@ export const projects = [
       "SafeSpace is a secure digital platform that empowers individuals to report gender-based violence, access helpful resources, and find support—all in a safe, confidential, and supportive environment.",
     stacks: [{ name: "React", image: react }],
   },
-  
 
   {
     image: food,
@@ -86,7 +119,6 @@ export const projects = [
     stacks: [{ name: "React", image: react }],
   },
 
-
   {
     image: todo,
     title: "Todo App",
@@ -99,7 +131,7 @@ export const projects = [
     stacks: [{ name: "React", image: react }],
   },
 
-    {
+  {
     image: coffee,
     title: "Coffe App",
     live: airplane,
@@ -130,5 +162,4 @@ export const projects = [
       { name: "JS", image: js },
     ],
   },
-
 ];
